@@ -77,72 +77,76 @@ export default function Storefront() {
         </div>
       </header>
 
-      {/* Hero */}
-      <section className="mx-auto grid max-w-[1440px] md:min-h-[590px] md:grid-cols-2">
-        <div className="flex flex-col justify-center px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-24">
-          <p className="mb-6 text-xs font-bold uppercase tracking-[0.28em] text-purple-700">
-            Independent streetwear
-          </p>
+    
+{/* Hero */}
+<section className="mx-auto grid max-w-[1440px] md:min-h-[590px] md:grid-cols-2">
+  {/* Hero text */}
+  <div className="flex flex-col justify-center px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-24">
+    <p className="mb-6 text-xs font-bold uppercase tracking-[0.28em] text-purple-700">
+      Independent streetwear
+    </p>
 
-          <h1 className="max-w-2xl text-5xl font-black leading-[0.94] tracking-[-0.055em] sm:text-6xl lg:text-7xl xl:text-8xl">
-            YOUR ENERGY.
-            <br />
-            YOUR KARMA.
-          </h1>
+    <h1 className="max-w-2xl text-5xl font-black leading-[0.94] tracking-[-0.055em] sm:text-6xl lg:text-7xl xl:text-8xl">
+      YOUR ENERGY.
+      <br />
+      YOUR KARMA.
+    </h1>
 
-          <p className="mt-7 max-w-md text-base leading-7 text-black/60 sm:text-lg">
-            Everyday essentials. Distinctive energy. Discover pieces that
-            express who you are without saying a word.
-          </p>
+    <p className="mt-7 max-w-md text-base leading-7 text-black/60 sm:text-lg">
+      Everyday essentials. Distinctive energy. Discover pieces that
+      express who you are without saying a word.
+    </p>
 
-          <div className="mt-9 flex flex-wrap gap-4">
-            <Link
-  to="/shop/products"
-  className="inline-flex min-h-14 items-center justify-center gap-4 bg-[#171717] px-7 py-4 text-xs font-bold uppercase tracking-[0.16em] !text-white transition-transform duration-300 ease-out hover:scale-105"
->
-  Explore the collection
-  <ArrowRight size={17} />
-</Link>
+    <div className="mt-9 flex flex-wrap gap-4">
+      <Link
+        to="/shop/products"
+        className="inline-flex min-h-14 items-center justify-center gap-4 bg-[#171717] px-7 py-4 text-xs font-bold uppercase tracking-[0.16em] !text-white transition-transform duration-300 ease-out hover:scale-105"
+      >
+        Explore the collection
+        <ArrowRight size={17} />
+      </Link>
 
-            <Link
-              to="/shop/collections"
-              className="inline-flex min-h-14 items-center justify-center border border-black/20 px-6 py-4 text-xs font-bold uppercase tracking-[0.16em] transition hover:bg-purple-600 hover:!text-white"
-            >
-              Discover more
-            </Link>
-          </div>
+      <Link
+        to="/shop/collections"
+        className="inline-flex min-h-14 items-center justify-center border border-black/20 px-6 py-4 text-xs font-bold uppercase tracking-[0.16em] transition hover:bg-purple-600 hover:!text-white"
+      >
+        Discover more
+      </Link>
+    </div>
 
-          <p className="mt-10 text-[10px] font-semibold uppercase tracking-[0.24em] text-black/40">
-            Wear your energy. Own your story.
-          </p>
-        </div>
+    <p className="mt-10 text-[10px] font-semibold uppercase tracking-[0.24em] text-black/40">
+      Wear your energy. Own your story.
+    </p>
+  </div>
 
-        <div className="relative flex min-h-[380px] items-center justify-center overflow-hidden bg-[#f1f0ed] sm:min-h-[480px] md:min-h-full">
-          <img
-            src="/images/karma-hero.jpg"
-            alt="KARMA CAN streetwear campaign"
-            className="absolute inset-0 h-full w-full object-cover"
-            onError={(event) => {
-              event.currentTarget.style.display = "none";
-            }}
-          />
+  {/* Hero campaign image */}
+<div className="relative flex min-h-[380px] items-center justify-center overflow-hidden bg-[#f1f0ed] sm:min-h-[480px] md:min-h-full">
+    <img
+      src="/images/Karma Can-Urban-Horizon.png"
+      alt="KARMA CAN streetwear campaign at sunset"
+      fetchPriority="high"
+      className="h-full w-full object-contain"
+    />
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+    {/* Subtle overlay for depth */}
+    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/5" />
 
-          <div className="relative z-10 px-6 text-center">
-            <p className="text-7xl font-black tracking-[-0.09em] text-black/10 sm:text-9xl">
-              KC.
-            </p>
-            <p className="mt-3 text-[10px] font-bold uppercase tracking-[0.35em] text-black/60">
-              Made to move differently
-            </p>
-          </div>
+    {/* Campaign caption */}
+    <div className="absolute bottom-5 left-5 z-10 border-l-2 border-white pl-4 text-white sm:bottom-8 sm:left-8">
+      <p className="text-[10px] font-bold uppercase tracking-[0.3em]">
+        KARMA CAN
+      </p>
+      <p className="mt-2 text-xs uppercase tracking-[0.18em] text-white/75">
+        Made to move differently
+      </p>
+    </div>
 
-          <span className="absolute bottom-6 right-6 z-10 bg-white/90 px-4 py-3 text-[10px] font-bold uppercase tracking-[0.2em]">
-            KARMA CAN — EST. IN ENERGY
-          </span>
-        </div>
-      </section>
+    <span className="absolute right-5 top-5 z-10 border border-white/40 bg-black/20 px-3 py-2 text-[9px] font-bold uppercase tracking-[0.2em] text-white backdrop-blur-sm sm:right-8 sm:top-8">
+      Est. in energy
+    </span>
+  </div>
+</section>
+
 
       {/* Brand values */}
       <section className="border-y border-black/10 bg-[#faf9f7]">

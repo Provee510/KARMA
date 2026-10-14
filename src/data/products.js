@@ -6,7 +6,7 @@ export const products = [
     price: 48,
     description:
       "An everyday essential with a distinctive KARMA graphic. Designed for a relaxed streetwear fit.",
-    image: "/images/halo-eye-tee.jpg",
+    image: "/images/halo-eye-tee.jpeg",
     colors: ["Black"],
     sizes: ["S", "M", "L", "XL"],
     featured: true,
@@ -19,7 +19,7 @@ export const products = [
     price: 78,
     description:
       "A premium-feel hoodie made for comfort, layering, and everyday movement.",
-    image: "/images/signature-hoodie.jpg",
+    image: "/images/signature-hoodie.jpeg",
     colors: ["Cream", "Black"],
     sizes: ["S", "M", "L", "XL"],
     featured: true,
@@ -32,7 +32,7 @@ export const products = [
     price: 68,
     description:
       "Utility-inspired streetwear pants with a versatile silhouette.",
-    image: "/images/utility-cargo-pants.jpg",
+    image: "/images/utility-cargo-pants.jpeg",
     colors: ["Black"],
     sizes: ["S", "M", "L", "XL"],
     featured: true,
@@ -45,7 +45,7 @@ export const products = [
     price: 98,
     description:
       "A lightweight streetwear layer with a clean, understated look.",
-    image: "/images/nylon-jacket.jpg",
+    image: "/images/nylon-jacket.jpeg",
     colors: ["Black"],
     sizes: ["S", "M", "L", "XL"],
     featured: true,
@@ -58,7 +58,7 @@ export const products = [
     price: 42,
     description:
       "A clean everyday tee designed to pair effortlessly with the rest of your wardrobe.",
-    image: "/images/essential-tee.jpg",
+    image: "/images/essential-tee.jpeg",
     colors: ["White", "Lavender"],
     sizes: ["S", "M", "L", "XL"],
     featured: true,
@@ -71,7 +71,7 @@ export const products = [
     price: 72,
     description:
       "A relaxed sweatshirt with a bold, lived-in streetwear feel.",
-    image: "/images/distressed-sweatshirt.jpg",
+    image: "/images/distressed-sweatshirt.jpeg",
     colors: ["Black"],
     sizes: ["S", "M", "L", "XL"],
     featured: false,
@@ -84,7 +84,7 @@ export const products = [
     price: 32,
     description:
       "A versatile everyday cap finished with signature KARMA branding.",
-    image: "/images/karma-cap.jpg",
+    image: "/images/karma-cap.jpeg",
     colors: ["Black"],
     sizes: ["One Size"],
     featured: true,
@@ -97,7 +97,7 @@ export const products = [
     price: 108,
     description:
       "A statement outerwear piece designed to bring warmth and presence to your look.",
-    image: "/images/puffer-jacket.jpg",
+    image: "/images/puffer-jacket.jpeg",
     colors: ["Black"],
     sizes: ["S", "M", "L", "XL"],
     featured: false,
