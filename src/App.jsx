@@ -1,7 +1,5 @@
-
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
-import Entry from "./pages/entry/Entry";
 import Login from "./pages/auth/Login";
 import Signup from "./pages/auth/Signup";
 import Storefront from "./pages/shop/Storefront";
@@ -15,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Entry />} />
+        <Route path="/" element={<Navigate to="/shop" replace />} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
@@ -28,7 +26,7 @@ function App() {
 
         <Route path="/cart" element={<Cart />} />
 
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/shop" replace />} />
       </Routes>
     </BrowserRouter>
   );
